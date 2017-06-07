@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Scrolling Alien Lander</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+</head>
+<body>
+
+  <img class="background" src="./images/background.svg">
+
+  <div class="foreground">
+    <div class="ufo_section"></div>
+    <div class="landing_section">
+    </div>
+  </div>
+
+  <script>
+    $(document).ready(function(){
+      set_section_heights();
+    });
+    $(window).resize(function(){
+      set_section_heights();
+    });
+    function set_section_heights(){
+      var doc_height = $(".background").height();
+      var section_heights = {
+
+        "ufo_section":0.25
+        "landing_section": 0.298
+      }
+
+      $.each( section_heights, function( index, value ) {
+        $( "." + index ).height( Math.floor(value * doc_height) );
+      });
+    }
+  </script>
+
+</body>
+</html>

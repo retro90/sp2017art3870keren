@@ -1,0 +1,23 @@
+body {
+  background-image:url("./images/background.svg");
+}
+
+#wrapper{
+  height:10000px;
+  width: 500px;
+  margin: 0 auto;
+  position:relative;
+
+  }
+
+#mainimage{
+  text-align:center;
+  position:absolute;
+  width:200px;
+  height:200px;
+  top:100px;
+  left:50%;
+  margin-left:-100px;
+
+
+}
