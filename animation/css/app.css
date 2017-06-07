@@ -55,6 +55,12 @@ position: relative;
 }
 .header {
   align-items: center;
+
+}
+#calloutprimary {
+  color: yellow;
+}
+
 }
 #calloutprimary {
   color: yellow;
